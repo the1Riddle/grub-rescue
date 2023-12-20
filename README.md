@@ -1,8 +1,8 @@
-# Error: no such pertition, grub rescue.
+# Error: no such partition, grub rescue.
 
-- Error no such partition entering rescue mode grub rescue is common after Ubuntu Linux is removed from dual boot PC or when the partition on which a linux distro was installed is tampered with. The error occurs mainly out of misconfigured bootloader or wrong active partition.
+- Error no such partition entering rescue mode grub rescue is common after Ubuntu Linux is removed from dual boot PC or when the partition on which a linux distro was installed is tampered with. The error occurs mainly out of a misconfigured bootloader or wrong active partition.
 
-## How to fix no such pertition, entering rescue mode.. error.
+## How to fix no such partition, entering rescue mode.. error.
 
 If you encounter the dreaded "No Such Partition" error and find yourself stuck in rescue mode, don't worry! Follow these steps to get your system back on track:
 
@@ -24,7 +24,7 @@ Step 2: Check File Type
 To identify the file type within a specific partition, use the following command:
 
 ```
-ls (pertitionname)
+ls (partition name)
 ```
 
 **Note:** If you encounter a `'Filesystem is unknown'` error, it means there's no ***operating system*** installed on that partition. Continue searching until you find a different output, as shown in the image below:
@@ -55,7 +55,7 @@ To complete the process, enter the following command:
 ```
 normal
 ```
-This should bring your system back to normal, and you should no longer see the "No Such Partition" error. If you still encounter issues, revisit the partition identification and setting steps.
+This should bring your system back to normal, and you should no longer see the "No Such Partition" error. If you still have issues, please go ahead and revisit the partition identification and setting steps.
 
 ![ma](https://github.com/the1Riddle/grub-rescue/assets/125451537/fea3d6db-df8e-4da6-9982-bb4863df6366)
 
@@ -64,7 +64,7 @@ Other posible challenges
 
 ### Windows Not Showing in GRUB Menu
 
-You will need to boot into your linux distro use `Ctrl` + `alt` + `t` to open the terminal, then check Windows Partition: Confirm where your Windows is stored using commands like ```lsblk``` or ```fdisk -l```. It might be `/dev/sda1` or anyy other.
+You will need to boot into your Linux distro and use `Ctrl` + `alt` + `t` to open the terminal, then check Windows Partition: Confirm where your Windows is stored using commands like ```lsblk``` or ```fdisk -l```. It might be `/dev/sda1` or any other.
 
 Update GRUB for Windows: Add a special Windows option in the /etc/grub.d/40_custom file. Here's an example:
 
@@ -88,7 +88,7 @@ You may just run
 ```
 sudo os-prober
 ```
-if your installation is found, like you fill see tha name of the win, then do:
+if your installation is found, you will see the name of the win indicated, then do:
 
 ```
 sudo update-grub
@@ -99,6 +99,6 @@ After these steps, you will be able to boot into your windows.
 
 Conclusion: If Windows isn't appearing in GRUB, check its location, set up a custom GRUB entry, and enable `os-prober`. This should fix the issue and restore dual-boot.
 
-## Do you have some ideas or query?
+## Do you have some ideas or queries?
 
-If you have questions or suggestions on how to improve the information on this page, you can always write to [issues](https://github.com/the1Riddle/grub-rescue/issues).
+If you have questions or suggestions on improving the information on this page, you can always write to [issues](https://github.com/the1Riddle/grub-rescue/issues).
