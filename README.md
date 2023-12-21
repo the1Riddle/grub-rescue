@@ -77,27 +77,38 @@ menuentry "Windows 10" {
 ```
 **Replace (hd0,msdos5) with your Windows partition info.**
 
-Enable os-prober: In /etc/default/grub, make sure GRUB_DISABLE_OS_PROBER is set to false for automatic detection of bootable partitions.
+Enable os-prober: In `/etc/default/grub`, make sure **GRUB_DISABLE_OS_PROBER** is set to `false` for automatic detection of bootable partitions.
 
 Update GRUB: Run ```sudo update-grub``` to refresh the GRUB configuration.
 
 Option 2
 -------------------
 
-You may just run
-```
-sudo os-prober
-```
-if your installation is found, you will see the name of the win indicated, then do:
+Are you getting grub rescue every time you reboot your system? Fear not! Here's your escape plan in a few easy steps:
+### bypass grub rescue
+
+Open your Linux terminal with the command provided on option one then run the following commands:
 
 ```
-sudo update-grub
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install -y boot-repair && boot-repair
 ```
+a new window will open where you will be required to select your preferred repair option and then Patiently wait for the repair process to reach successful completion.
+Upon successful repair, you will witness the following confirmation:
+
+![image](https://github.com/the1Riddle/grub-rescue/assets/125451537/515cfe04-a09c-42ee-8754-a29030491328)
+
+To finalize the process, reboot your system using the following command:
+```
+sudo reboot
+```
+
 and you'll be done!
 
 After these steps, you will be able to boot into your windows.
 
-Conclusion: If Windows isn't appearing in GRUB, check its location, set up a custom GRUB entry, and enable `os-prober`. This should fix the issue and restore dual-boot.
+> ![Note]: If Windows isn't appearing in GRUB, check its location, set up a custom GRUB entry, and enable `os-prober`. This should fix the issue and restore dual-boot.
 
 ## Do you have some ideas or queries?
 
