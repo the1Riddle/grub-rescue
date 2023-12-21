@@ -1,6 +1,6 @@
 # Error: no such partition, grub rescue.
 
-- Error no such partition entering rescue mode grub rescue is common after Ubuntu Linux is removed from dual boot PC or when the partition on which a linux distro was installed is tampered with. The error occurs mainly out of a misconfigured bootloader or wrong active partition.
+- Error no such partition entering rescue mode grub rescue is common after Ubuntu Linux is removed from dual boot PC or when the partition on which a Linux distro was installed is tampered with. The error occurs mainly out of a misconfigured bootloader or wrong active partition.
 
 ## How to fix no such partition, entering rescue mode.. error.
 
@@ -108,7 +108,7 @@ and you'll be done!
 
 After these steps, you will be able to boot into your windows.
 
-> ![Note]: If Windows isn't appearing in GRUB, check its location, set up a custom GRUB entry, and enable `os-prober`. This should fix the issue and restore dual-boot.
+> [!Note]: If Windows isn't appearing in GRUB, check its location, set up a custom GRUB entry, and enable `os-prober`. This should fix the issue and restore dual-boot.
 
 ## Do you have some ideas or queries?
 
