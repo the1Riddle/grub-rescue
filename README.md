@@ -108,7 +108,8 @@ and you'll be done!
 
 After these steps, you will be able to boot into your windows.
 
-> [!NOTE]: If Windows isn't appearing in GRUB, check its location, set up a custom GRUB entry, and enable `os-prober`. This should fix the issue and restore dual-boot.
+> [!NOTE]<br>
+> Conclusion: If Windows isn't appearing in GRUB, check its location, set up a custom GRUB entry, and enable `os-prober`. This should fix the issue and restore dual-boot.
 
 ## Do you have some ideas or queries?
 
