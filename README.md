@@ -16,7 +16,9 @@ ls
 ```
 This will display a list of partitions similar to the following image:
 
-![img1](https://github.com/the1Riddle/grub-rescue/assets/125451537/18dcf04b-dd09-4e2d-af45-fec99134bd54)
+![image](https://github.com/the1Riddle/grub-rescue/assets/125451537/fbda19bc-0f79-4187-93f2-546a894c06ea)
+
+on your case it would be ***grub rescue>*** instead of ***grub>***
 
 Step 2: Check File Type
 ------------------------------------
